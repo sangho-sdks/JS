@@ -30,3 +30,7 @@ pnpm-debug.log*
 
 # TypeScript
 *.tsbuildinfo
+
+#Project
+.commands/
+.project/

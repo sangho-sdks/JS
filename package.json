@@ -1,16 +1,16 @@
 {
-  "name": "sangho-sdk-js",
+  "name": "sangho",
   "version": "0.1.0",
-  "description": "Official JavaScript/TypeScript SDK for the Sangho Payment API",
+  "description": "SDK officiel JavaScript/TypeScript pour l'API Sangho",
   "author": "Sangho <dev@sangho.com>",
   "license": "MIT",
-  "homepage": "https://docs.sangho.com/sdk/js",
+  "homepage": "https://docs.sangho.com/sdks/js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sangho/sangho-sdk-js.git"
+    "url": "https://github.com/sangho-sdks/sangho.js.git"
   },
   "bugs": {
-    "url": "https://github.com/sangho/sangho-sdk-js/issues"
+    "url": "https://github.com/sangho-sdks/sangho.js/issues"
   },
   "keywords": [
     "sangho",
@@ -50,11 +50,14 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
-    "test": "vitest run",
-    "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "clean": "rimraf dist",
-    "prepublishOnly": "pnpm run clean && pnpm run build && pnpm run typecheck"
+    "prepublishOnly": "pnpm run clean && pnpm run build && pnpm run typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "version:patch": "pnpm version patch && git push --follow-tags",
+    "version:minor": "pnpm version minor && git push --follow-tags",
+    "version:major": "pnpm version major && git push --follow-tags"
   },
   "dependencies": {},
   "devDependencies": {
