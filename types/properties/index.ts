@@ -1,0 +1,17 @@
+export type { AppsProperties } from "./apps";
+export type { AddressesProperties } from "./addresses";
+export type { PaymentIntentsProperties } from "./payment-intents";
+export type { CustomersProperties } from "./customers";
+export type { ProductsProperties } from "./products";
+export type { TransactionsProperties } from "./transactions";
+export type { RefundsProperties } from "./refunds";
+export type { InvoicesProperties } from "./invoices";
+export type { PaymentLinksProperties } from "./payment-links";
+export type { CheckoutSessionsProperties } from "./checkout-sessions";
+export type { SubscriptionsProperties } from "./subscriptions";
+export type { PaymentMethodsProperties } from "./payment-methods";
+export type { ReceiptsProperties } from "./receipts";
+export type { WebhooksProperties } from "./webhooks";
+export type { SecurityProperties } from "./security";
+export type { PartnersProperties } from "./partners";
+export type { TerminalProperties } from "./terminal";
